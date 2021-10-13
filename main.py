@@ -1,1 +1,1 @@
-print("Hello World qwertyuiop")
+print("test")
