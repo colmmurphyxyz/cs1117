@@ -31,9 +31,9 @@ def get_player_age():
     print("%s is %d years and %d days old" % (player, age_years, remaining_days))
 
 
-
 def main():
     print_results_table()
+
 
 if __name__ == "__main__":
     print_results_table()
