@@ -1,5 +1,6 @@
 .vscode/
 *.pdf
+*.zip
 **/__pycache__/
 __pycache__/
 
