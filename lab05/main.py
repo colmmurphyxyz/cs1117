@@ -1,5 +1,6 @@
 # ScriptName: main.py
-# Author: <add your name here>
+# Author: \Colm Murphy
+# Student Number: 121356486
 
 # template for calling functions in another file
 
@@ -14,7 +15,7 @@ def main():
     """
     Call the functions defined in the functions.py file
     """
-    print(sepr)
+    print_function()
 
 
 if __name__ == "__main__":
