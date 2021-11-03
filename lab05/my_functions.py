@@ -8,28 +8,33 @@
 def print_function():
     print("I'm in another file :)")
 
-def fizz_buzz(num1):
-    if type(num1) != int:
+
+def fizz_buzz_1(num1):
+    try:
+        if num1 % 15 == 0:
+            return "FizzBuzz"
+        if num1 % 3 == 0:
+            return "Fizz"
+        if num1 % 5 == 0:
+            return "Buzz"
+        return num1
+    except TypeError:
         return "Input value must be a number"
-    if num1 % 15 == 0:
-        return "FizzBuzz"
-    if num % 3 == 0:
-        return "Fizz"
-    if num % 5 == 0:
-        return "Buzz"
-    return num1
 
-
-def buzz_fizz(num1, divisor_1, divisor_2):
-    if type(num1) != int or type(divisor_1) == int or type(divisor_2) == int:
+def fizz_buzz(num1, divisor_1, divisor_2):
+    # if type(num1) != int or type(divisor_1) == int or type(divisor_2) == int:
+    #     return "Input value(s) must be a number"
+    try:
+        if num1 % (divisor_1 * divisor_2) == 0:
+            return "FizzBuzz"
+        if num1 % divisor_1 == 0:
+            return "Fizz"
+        if num1 % divisor_2 == 0:
+            return "Buzz"
+        return num1
+    except TypeError:
         return "Input value(s) must be a number"
-    if num1 % (divisor_1 * divisor_2) == 0:
-        return "FizzBuzz"
-    if num % divisor_1 == 0:
-        return "Fizz"
-    if num % divisor_2 == 0:
-        return "Buzz"
-    return num1
+
 
 def grades(num):
     if type(num) == int:

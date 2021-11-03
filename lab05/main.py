@@ -15,7 +15,7 @@ def main():
     """
     Call the functions defined in the functions.py file
     """
-    print_function()
+    print(fizz_buzz(1, "3", 5))
 
 
 if __name__ == "__main__":
