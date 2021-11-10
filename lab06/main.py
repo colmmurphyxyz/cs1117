@@ -1,6 +1,5 @@
 # ScriptName: main.py
-# Author: \Colm Murphy
-# Student Number: 121356486
+# Author: Colm Murphy
 
 # template for calling functions in another file
 
@@ -15,7 +14,15 @@ def main():
     """
     Call the functions defined in the functions.py file
     """
-    print(fizz_buzz(False))
+    print(add_to_list_no_sort(5, [1, 3, 7, 9]))
+    print(add_to_list_no_sort(10, [1, 3, 7, 9]))
+    print(add_to_list_no_sort("c", ["a", "b", "d", "e"]))
+    print(add_to_list_no_sort(5, [1, 5, 7, 9]))
+    print(add_to_list_no_sort(5))
+    print(add_to_list_no_sort(5, ["a", "b", "d", "e"]))
+    print(add_to_list_no_sort(5, 5))
+    print(add_to_list_no_sort(99, ["a", "b", "d", "e"]))
+    print(add_to_list_no_sort(99.5, ["a", "b", "d", "e"]))
 
 
 if __name__ == "__main__":
